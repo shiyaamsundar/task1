@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="./style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/boxicons@2.1.2/dist/boxicons.js"></script>
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <nav>
+      <div class="nav-left">
+        <img
+          src="data:image/png;base64,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"
+          alt=""
+          class="nav-logo"
+        />
+        <ul>
+          <li>Why cloudfare</li>
+          <li>Solutions</li>
+          <li>Products</li>
+          <li>Documentation</li>
+          <li>Pricing</li>
+          <li>ROI calculator</li>
+          <li>Partners</li>
+        </ul>
+      </div>
+      <div class="nav-right">
+        <div class="nav-right-top">
+          <p>+1234567</p>
+          <div class="line"></div>
+          <p>support</p>
+          <div class="line"></div>
+          <p>login</p>
+          <div class="line"></div>
+          <i class="bx bx-globe"></i>
+        </div>
+        <div class="nav-right-bot">
+          <i class="bx bx-search"></i>
+          <button class="sign-up">Sign Up</button>
+          <button class="under-attack">Under Attack?</button>
+        </div>
+      </div>
+    </nav>
+    <section class="header">
+      <h1>Welcome to the Clourfare saving calculator</h1>
+      <p class="p2">
+        In order to give you a proper calculation,please answer the following
+        two page
+      </p>
+    </section>
+    <section class="industry-region">
+      <div class="industry-region-title">
+        <div>
+          <h3>What is your industry and region</h3>
+          <p>select all that apply from primary to subindustry</p>
+        </div>
+        <select>
+          <option value="">select all the region that apply</option>
+        </select>
+      </div>
+      <div class="industry-main">
+        <div class="indus-card">
+          <div class="industry-main-iconbar">
+            <i class="bx bx-cart"></i>
+            <span class="round"></span>
+          </div>
+          <div>
+            <p class="indus-card-title">Ecommerce</p>
+          </div>
+        </div>
+        <div class="indus-card">
+          <div class="industry-main-iconbar">
+            <i class="bx bx-plus-medical"></i>
+            <span class="round"></span>
+          </div>
+          <div>
+            <p class="indus-card-title">Insurance</p>
+          </div>
+        </div>
+        <div class="indus-card">
+          <div class="industry-main-iconbar">
+            <i class="bx bx-film"></i>
+
+            <span class="round"></span>
+          </div>
+          <div>
+            <p class="indus-card-title">Media & Entertainment</p>
+          </div>
+        </div>
+        <div class="indus-card">
+          <div class="industry-main-iconbar">
+            <i class="bx bx-dollar"></i>
+            <span class="round"></span>
+          </div>
+          <div>
+            <p class="indus-card-title">Financial Service</p>
+          </div>
+        </div>
+        <div class="indus-card">
+          <div class="industry-main-iconbar">
+            <i class="bx bxs-bank"></i>
+            <span class="round"></span>
+          </div>
+          <div>
+            <p class="indus-card-title">Public sector</p>
+          </div>
+        </div>
+
+        <div class="indus-card">
+          <div class="industry-main-iconbar">
+            <i class="bx bx-book-open"></i>
+
+            <span class="round"></span>
+          </div>
+          <div>
+            <p class="indus-card-title">Education</p>
+          </div>
+        </div>
+
+        <div class="indus-card">
+          <div class="industry-main-iconbar">
+            <i class="bx bx-joystick"></i>
+            <span class="round"></span>
+          </div>
+          <div>
+            <p class="indus-card-title">GAaming</p>
+          </div>
+        </div>
+
+        <div class="indus-card">
+          <div class="industry-main-iconbar">
+            <i class="bx bx-cloud-drizzle"></i>
+            <span class="round"></span>
+          </div>
+          <div>
+            <p class="indus-card-title">Saas</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="company-size">
+      <div class="company-title">
+        <h1>What is your company size</h1>
+        <p>select one</p>
+      </div>
+      <div class="company-main">
+        <div class="company-card">
+          <div class="icon1">
+            <i class="bx bx-home-alt"></i>
+          </div>
+          <div class="company-data">
+            <h4>Small Business</h4>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae, id
+              sit obcaecati optio eligendi nisi.''
+            </p>
+          </div>
+        </div>
+
+        <div class="company-card">
+          <div class="icon1">
+            <i class="bx bx-buildings"></i>
+          </div>
+          <div class="company-data">
+            <h4>Mid market Enterprise</h4>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae, id
+              sit obcaecati optio eligendi nisi.''
+            </p>
+          </div>
+        </div>
+
+        <div class="company-card">
+          <div class="icon1">
+            <i class="bx bxs-plane-alt"></i>
+          </div>
+          <div class="company-data">
+            <h4>Large Enterprise</h4>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae, id
+              sit obcaecati optio eligendi nisi.''
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="next-btn">
+      <button class="next">Next</button>
+    </div>
+  </body>
+</html>
